@@ -1,0 +1,106 @@
+.subscription {
+  background: #ddd;
+}
+.user-name {
+  font-size: 30px;
+  text-align: center;
+  /* border: 1px solid; */
+  width: max-content;
+  padding: 8px 4rem;
+  margin: 12px auto;
+  background: #f2f2f2;
+
+}
+.subs-heading {
+    font-size: 28px;
+    text-align: center;
+}
+.subscription-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    flex-wrap: wrap;
+    color: #212121;
+
+    /* margin: 15rem 5rem; */
+  }
+
+  .plan {
+    background-color: #eceff1;
+    border-radius: 15px;
+    border: 1px solid #eceff133;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    /* text-align: center; */
+    width: 300px;
+    margin: 10px;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .plan-header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .plan-price {
+    font-size: 2.7rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+
+  .plan-description {
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .subscribe-button {
+    /* background-color: var(--green); */
+    background: #000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  .btn-basic {
+    background: #292929;
+  }
+  .btn-basic:hover {
+    background: #656565;
+  }
+  .btn-primium {
+    background: var(--green);
+  }
+
+  .btn-primium:hover {
+    background-color: var(--dark-color);
+  }
+  ul {
+    list-style: none;
+  }
+  ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .card__bullets {
+    line-height: 1.4;
+  }
+  
+  .card__bullets li::before {
+    display: inline-block;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='16' title='check' fill='%23dddddd'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+    transform: translatey(0.25ch);
+    margin-right: 1ch;
+    color: black;
+  }
+
