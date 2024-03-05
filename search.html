@@ -58,21 +58,21 @@
     <nav class="bottom-navbar">
       <div class="navbar-bottons">
         <div class="navbar-item">
-          <a href="./index.php" class="fas fa-home"></a>
+          <a href="index.html" class="fas fa-home"></a>
           <p>Home</p>
         </div>
 
         <div class="navbar-item">
-          <a href="./shop.php" class="fas fa-th-large"></a>
+          <a href="shop.html" class="fas fa-th-large"></a>
           <p>Category</p>
         </div>
         <div class="navbar-item">
-          <a href="./search.php" class="fas fa-search"></a>
+          <a href="search.html" class="fas fa-search"></a>
           <p>Search</p>
         </div>
 
         <div class="navbar-item">
-          <a href="./cart.php" class="fas fa-shopping-cart"></a>
+          <a href="" class="fas fa-shopping-cart"></a>
           <p>Cart</p>
         </div>
       </div>
@@ -229,123 +229,117 @@
     </div>
     <!-- registration form  -->
 
-    <!-- Shop page -->
-    <!-- // header image -->
-    <section class="shop" id="home">
-      <div class="row">
-        <div class="content">
-          <h3>Bookbin > Shop Page</h3>
-        </div>
-      </div>
-
-      <!-- </div> -->
-    </section>
-
-    <!-- shop page start -->
-    <section class="category" id="featured">
-      <!-- <h1 class="heading"> <span>Shop Page</span> </h1> -->
-      <div class="select_cat">
-        <h1>Category</h1>
-
-        <form action="" method="post">
-          <select name="category_id" class="options" id="">
+    <!-- search Section -->
+    <section class="search" id="Search">
+      <!-- <h2>Seach Page</h2> -->
+      <!-- search bar -->
+      <div class="search-bar">
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <select name="" id="search-category">
             <option value="">Choose Option</option>
-            <option value="textbook">Text Book</option>
-            <option value="biography">Biography</option>
-            <option value="Noval">Noval</option>
+            <option value="textbook">Books</option>
             <option value="Gadgets">Gadgets</option>
           </select>
-          <input type="submit" value="Browse" name="cat_btn" class="cat_btn" />
+          <label for="search-box" class="fas fa-search"></label>
         </form>
       </div>
+      <!-- !search bar -->
 
-      <div class="swiper featured-slider product">
-        <div class="shop-container product-container">
-          <form action="" method="post">
-            <div class="item">
-              <div class="image">
-                <img src="product_img/book-01.jpg" alt="" />
+      <!-- backend code  -->
+      <!-- <?php
+         $no_of_sub = mysqli_num_rows($sub_result);
+         ?> -->
+      <!-- !backend code  -->
+
+      <div class="suggest-product" id="recomended-product">
+        <h1>Top Categories</h1>
+        <div class="suggest-categories">
+          <a href="#" data-bid="" id="top-category-book">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Text Book</h3>
+                <p>Books</p>
               </div>
-              <div class="content">
-                <h3>How to learn anything</h3>
-                <p>BCA 6th Semester</p>
-                <p>Tahir Uddin Ahmed</p>
-
-                <div class="price">406 <span>650</span></div>
-                <!-- <a href="#" class="btn">add to cart</a> -->
-                <input type="hidden" name="product_id" value="" />
-                <input type="hidden" name="cat_id" value="" />
-                <input type="hidden" name="seller_id" value="" />
-                <input type="hidden" name="product_image" value="" />
-                <input type="hidden" name="product_title" value="" />
-                <input type="hidden" name="product_price" value="" />
-                <input
-                  type="submit"
-                  name="addCart"
-                  class="btn"
-                  value="Buy Now"
-                />
+              <div class="cat_img">
+                <img src="./product_img/book7.png" alt="" />
               </div>
             </div>
-          </form>
-          <form action="" method="post">
-            <div class="item">
-              <div class="image">
-                <img src="product_img/book-03.jpg" alt="" />
-              </div>
-              <div class="content">
-                <h3>How to learn anything</h3>
-                <p>BCA 6th Semester</p>
-                <p>Tahir Uddin Ahmed</p>
+          </a>
 
-                <div class="price">406 <span>650</span></div>
-                <!-- <a href="#" class="btn">add to cart</a> -->
-                <input type="hidden" name="product_id" value="" />
-                <input type="hidden" name="cat_id" value="" />
-                <input type="hidden" name="seller_id" value="" />
-                <input type="hidden" name="product_image" value="" />
-                <input type="hidden" name="product_title" value="" />
-                <input type="hidden" name="product_price" value="" />
-                <input
-                  type="submit"
-                  name="addCart"
-                  class="btn"
-                  value="Buy Now"
-                />
+          <a href="#" data-gid="" id="top-category-gadget">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Music Intruments</h3>
+                <p>Gadgets</p>
+              </div>
+
+              <div class="cat_img">
+                <img src="./product_img/product.png" alt="" />
               </div>
             </div>
-          </form>
-          <form action="" method="post">
-            <div class="item">
-              <div class="image">
-                <img src="product_img/book-10.png" alt="" />
+          </a>
+          <a href="#" data-bid="" id="top-category-book">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Text Book</h3>
+                <p>Books</p>
               </div>
-              <div class="content">
-                <h3>How to learn anything</h3>
-                <p>BCA 6th Semester</p>
-                <p>Tahir Uddin Ahmed</p>
-
-                <div class="price">406 <span>650</span></div>
-                <!-- <a href="#" class="btn">add to cart</a> -->
-                <input type="hidden" name="product_id" value="" />
-                <input type="hidden" name="cat_id" value="" />
-                <input type="hidden" name="seller_id" value="" />
-                <input type="hidden" name="product_image" value="" />
-                <input type="hidden" name="product_title" value="" />
-                <input type="hidden" name="product_price" value="" />
-                <input
-                  type="submit"
-                  name="addCart"
-                  class="btn"
-                  value="Buy Now"
-                />
+              <div class="cat_img">
+                <img src="./product_img/book7.png" alt="" />
               </div>
             </div>
-          </form>
+          </a>
+
+          <a href="#" data-gid="" id="top-category-gadget">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Music Intruments</h3>
+                <p>Gadgets</p>
+              </div>
+
+              <div class="cat_img">
+                <img src="./product_img/product.png" alt="" />
+              </div>
+            </div>
+          </a>
+          <a href="#" data-bid="" id="top-category-book">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Text Book</h3>
+                <p>Books</p>
+              </div>
+              <div class="cat_img">
+                <img src="./product_img/book7.png" alt="" />
+              </div>
+            </div>
+          </a>
+
+          <a href="#" data-gid="" id="top-category-gadget">
+            <div class="category-item">
+              <div class="suggest-text">
+                <h3>Music Intruments</h3>
+                <p>Gadgets</p>
+              </div>
+
+              <div class="cat_img">
+                <img src="./product_img/product.png" alt="" />
+              </div>
+            </div>
+          </a>
         </div>
       </div>
+
+      <div id="search-product">
+        <div class="product-container" id="product-container"></div>
+      </div>
     </section>
-    <!-- Shop page -->
+    <!-- search Section -->
 
     <!-- footer section starts  -->
 
