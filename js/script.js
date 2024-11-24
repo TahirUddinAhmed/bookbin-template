@@ -67,13 +67,13 @@ var swiper = new Swiper(".top-category", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.5,
+      slidesPerView: 2.5,
     },
     768: {
       slidesPerView: 1.5,
     },
     1024: {
-      slidesPerView: 5.5,
+      slidesPerView: 5,
     },
   },
 });
