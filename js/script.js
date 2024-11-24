@@ -58,6 +58,25 @@ window.onload = () =>{
 //   setTimeout(loader, 1000);
 // }
 
+var swiper = new Swiper(".top-category", {
+  loop:true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    1024: {
+      slidesPerView: 5.5,
+    },
+  },
+});
 var swiper = new Swiper(".books-slider", {
   loop:true,
   centeredSlides: true,

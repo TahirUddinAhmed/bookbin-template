@@ -654,7 +654,8 @@ form .user-details .input-box .errorFields {
 
 /* Top Categories Container */
 .categories-container {
-    padding:2rem 0;
+    padding:5rem 9%;
+    /* padding:2rem 0 7rem 0; */
     background: linear-gradient(to bottom, #f3f4f7, #e5e5e5);
 }
 .categories-container h3 {
@@ -664,30 +665,33 @@ form .user-details .input-box .errorFields {
     padding-bottom: 1rem;
     font-weight: bold;
     letter-spacing: .4px;
+    margin-bottom: 1.5rem;
 } 
 .top-category {
-    display: grid;
+    /* border: 1px solid red;
+    background: #000; */
+    /* display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 20px;
-    justify-self: center;
+    justify-self: center; */
 }
-.top-category div {
-
+.top-category .category-item {
+    
     background: linear-gradient(145deg, #26a69a, #2ecc71);
     /* background: linear-gradient(119deg, rgba(2,0,36,1) 5%, rgba(39,174,93,1) 40%, rgba(39,174,96,1) 100%); */
     border-radius: 10px;
     min-height: 190px;
-    /* width: 200px; */
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
-.top-category div:hover {
+.top-category .category-item:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
-.top-category div h4 {
+.top-category .category-item h4 {
     font-size: 1.8rem;
     color: var(--white);
     font-weight: bold;
