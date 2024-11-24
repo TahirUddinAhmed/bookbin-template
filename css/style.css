@@ -677,7 +677,7 @@ form .user-details .input-box .errorFields {
     /* background: linear-gradient(119deg, rgba(2,0,36,1) 5%, rgba(39,174,93,1) 40%, rgba(39,174,96,1) 100%); */
     border-radius: 10px;
     min-height: 190px;
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1802,8 +1802,19 @@ td:last-child {
         
     }
     .top-category {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
+    .top-category div {
+        min-height: 150px;
+        padding: 0 0.5rem;
+    }
+    .top-category div h4 {
+        font-size: 1.6rem;
+        text-wrap: wrap;
+    }
+
+
+
     .item {
         height: auto;
         width: auto;
@@ -1866,8 +1877,15 @@ td:last-child {
     }
 
     /* Top Category */
-    .category{
-        grid-template-columns: 1fr;
+    .top-category {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-category div {
+        min-height: 150px;
+    }
+    .top-category div h4 {
+        font-size: 1.1rem;
+        text-wrap: wrap;
     }
     
     /* search page categories */
