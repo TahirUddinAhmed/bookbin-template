@@ -643,12 +643,37 @@ form .user-details .input-box .errorFields {
     padding:1rem 0;
 }
 
+.headline-container {
+    margin-top: 0px;
+    padding: 4rem 2rem;
+    /* background: linear-gradient(145deg, var(--green), var(--dark-color));  */
+    color: var(--black); /* White text for contrast */
+    text-align: center;
+    /* border-radius: 10px; Rounded edges for a softer look */
+    /* box-shadow: var(--box-shadow); Subtle shadow for depth */
+    margin: 2rem 0; /* Spacing from other sections */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.headline-container h3 {
+    font-size: 1.8rem; /* Adjust font size as needed */
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add subtle text shadow for better visibility */
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.headline-container h3:hover {
+    color: var(--dark-color);
+}
+
 .icons-container{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Courgette', cursive;
-    font-size: 25px;
+    font-size: 21px;
     /* background:#f3f3f3; */
 }
 
