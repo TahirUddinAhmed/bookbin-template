@@ -1861,6 +1861,11 @@ td:last-child {
         
         margin: 2rem;
     }
+
+    /* Top Category */
+    .category div {
+        grid-template-columns: 1fr;
+    }
     
     /* search page categories */
     .suggest-product .suggest-categories {
