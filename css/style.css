@@ -652,6 +652,51 @@ form .user-details .input-box .errorFields {
     /* background:#f3f3f3; */
 }
 
+/* Top Categories Container */
+.categories-container {
+    padding:2rem 0;
+    background: linear-gradient(to bottom, #f3f4f7, #e5e5e5);
+}
+.categories-container h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--dark-color);
+    padding-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: .4px;
+} 
+.category {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+    justify-self: center;
+}
+.category div {
+
+    background: linear-gradient(145deg, #26a69a, #2ecc71);
+    /* background: linear-gradient(119deg, rgba(2,0,36,1) 5%, rgba(39,174,93,1) 40%, rgba(39,174,96,1) 100%); */
+    border-radius: 10px;
+    min-height: 190px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.category div:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+.category div h4 {
+    font-size: 1.8rem;
+    color: var(--white);
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 .icons-container .icons{
     display: flex;
     align-items: center;
