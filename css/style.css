@@ -665,13 +665,13 @@ form .user-details .input-box .errorFields {
     font-weight: bold;
     letter-spacing: .4px;
 } 
-.category {
+.top-category {
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 20px;
     justify-self: center;
 }
-.category div {
+.top-category div {
 
     background: linear-gradient(145deg, #26a69a, #2ecc71);
     /* background: linear-gradient(119deg, rgba(2,0,36,1) 5%, rgba(39,174,93,1) 40%, rgba(39,174,96,1) 100%); */
@@ -683,11 +683,11 @@ form .user-details .input-box .errorFields {
     align-items: center;
     cursor: pointer;
 }
-.category div:hover {
+.top-category div:hover {
     transform: translateY(-2px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
-.category div h4 {
+.top-category div h4 {
     font-size: 1.8rem;
     color: var(--white);
     font-weight: bold;
@@ -1801,6 +1801,9 @@ td:last-child {
         
         
     }
+    .top-category {
+        grid-template-columns: 1fr;
+    }
     .item {
         height: auto;
         width: auto;
@@ -1863,7 +1866,7 @@ td:last-child {
     }
 
     /* Top Category */
-    .category div {
+    .category{
         grid-template-columns: 1fr;
     }
     
