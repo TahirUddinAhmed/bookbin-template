@@ -67,7 +67,7 @@ var swiper = new Swiper(".top-category", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.8,
     },
     768: {
       slidesPerView: 1.5,
