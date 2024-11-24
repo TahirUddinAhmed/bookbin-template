@@ -1798,11 +1798,6 @@ td:last-child {
         
         
     }
-    .top-category .category-item {
-        height: 150px;
-        width: 150px;
-    }
-
 
 
     .item {
@@ -1866,11 +1861,6 @@ td:last-child {
         margin: 2rem;
     }
 
-    /* Top Category */
-    .top-category .category-item {
-        height: 150px;
-        width: 150px;
-    }
     /* search page categories */
     .suggest-product .suggest-categories {
         margin: 2rem;
