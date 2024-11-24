@@ -59,7 +59,7 @@ window.onload = () =>{
 // }
 
 var swiper = new Swiper(".top-category", {
-  loop:true,
+  loop:false,
   centeredSlides: true,
   autoplay: {
     delay: 9500,
@@ -67,7 +67,7 @@ var swiper = new Swiper(".top-category", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 2.5,
+      slidesPerView: 1.7,
     },
     768: {
       slidesPerView: 1.5,
