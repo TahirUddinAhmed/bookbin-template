@@ -58,9 +58,29 @@ window.onload = () =>{
 //   setTimeout(loader, 1000);
 // }
 
+var swiper = new Swiper(".similar-stream", {
+  loop:false,
+  centeredSlides: false,
+  autoplay: {
+    delay: 9500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 var swiper = new Swiper(".top-category", {
   loop:false,
-  centeredSlides: true,
+  centeredSlides: false,
   autoplay: {
     delay: 9500,
     disableOnInteraction: false,
@@ -92,7 +112,7 @@ var swiper = new Swiper(".books-slider", {
       slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     },
   },
 });
