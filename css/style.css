@@ -744,6 +744,11 @@ form .user-details .input-box .errorFields {
 .similar-stream .paper {
     margin-right: 10px;
 }
+.stream-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .stream h2 {
     /* color: red; */
     margin: 1rem 0;
@@ -751,6 +756,24 @@ form .user-details .input-box .errorFields {
     border-bottom: var(--border);
     padding-bottom: 8px;
     border-width: 2px;
+}
+.stream-head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: var(--border);
+    border-width: 2px;
+}
+.stream-head h2 {
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+}
+.stream-head a {
+    color: var(--green);
+    font-size: 1.5rem;
+    text-decoration: underline;
 }
 .go-back-link {
     margin-bottom: 5rem;
@@ -2061,7 +2084,7 @@ td:last-child {
         grid-template-columns: repeat(2, 1fr); /* Single-column layout */
     }
 
-    .papers .paper {
+    .paper {
         padding: 2rem;
         cursor: none;
         border: var(--border);
@@ -2164,11 +2187,8 @@ td:last-child {
         grid-template-columns: 1fr/* Single-column layout */
     }
 
-    .papers .paper {
-        /* padding: 2rem; */
+    .paper {
         cursor: none;
-        /* border: var(--border);
-        box-shadow: var(--box-shadow); */
     }
 
     .single-question-wrap {
@@ -2290,7 +2310,7 @@ td:last-child {
         margin-bottom: 1rem;
     }
 
-    .papers .paper {
+    .paper {
         cursor: none;  
     }
     .papers .content .paper-link {
