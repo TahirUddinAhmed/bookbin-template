@@ -724,6 +724,7 @@ form .user-details .input-box .errorFields {
     border: var(--border);
     padding: 0.5rem 1rem;   
     border-radius: 2px;
+    width: 100%;
 }
 .paper-link i {
    margin: 0 1.2rem;
@@ -1956,7 +1957,13 @@ td:last-child {
     .item {
         margin: 0 auto;
     }
+    .paper-link {
+        width: 100%;
+    }
 
+    .paper-link i {
+        margin: 0;
+    }
 }
 
 @media (max-width:768px){
@@ -2117,8 +2124,12 @@ td:last-child {
         padding: 1rem 2rem;
         cursor: pointer;
     }
-    .similar-stream .paper-link {
+    .paper-link {
         width: 100%;
+    }
+
+    .paper-link i {
+        margin: 0;
     }
     .go-back-link a i {
         margin-right: 5px;
@@ -2203,8 +2214,12 @@ td:last-child {
         display: none;
     }
 
-    .similar-stream .paper-link {
+    .paper-link {
         width: 100%;
+    }
+
+    .paper-link i {
+        margin: 0;
     }
 
     .download-btn a{ 
@@ -2336,8 +2351,12 @@ td:last-child {
         display: none;
     }
 
-    .similar-stream .paper-link {
+    .paper-link {
         width: 100%;
+    }
+
+    .paper-link i {
+        margin: 0;
     }
 
     .download-btn a{ 
