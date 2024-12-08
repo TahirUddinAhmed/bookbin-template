@@ -2117,6 +2117,9 @@ td:last-child {
         padding: 1rem 2rem;
         cursor: pointer;
     }
+    .similar-stream .paper-link {
+        width: 100%;
+    }
     .go-back-link a i {
         margin-right: 5px;
         rotate: 180deg;
@@ -2198,6 +2201,10 @@ td:last-child {
 
     .similar-papers {
         display: none;
+    }
+
+    .similar-stream .paper-link {
+        width: 100%;
     }
 
     .download-btn a{ 
@@ -2327,6 +2334,10 @@ td:last-child {
 
     .similar-papers {
         display: none;
+    }
+
+    .similar-stream .paper-link {
+        width: 100%;
     }
 
     .download-btn a{ 
